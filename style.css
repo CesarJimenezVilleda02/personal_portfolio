@@ -29,7 +29,7 @@
 }
 
 .logo img {
-    width: 30px;
+    width: 50px;
     position: relative;
     z-index: 10;
     cursor: pointer;
@@ -39,17 +39,13 @@ nav {
     flex: 1;
 }
 
-nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 60px;
+nav h2 {
+    color: #ffffff;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+    font-weight: 200;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 14px;
-}
 
 .user {
     display: flex;
@@ -62,6 +58,7 @@ nav ul li a{
     width: 30px;
     margin-left: 15px;
     cursor: pointer;
+    border-radius: 200px;
 }
 
 .sidebar {
@@ -80,14 +77,14 @@ nav ul li a{
 }
 
 .social-links {
-    width: 20px;
+    width: 30px;
     display: block;
     margin: 220px auto 0;
     text-align: center;
 }
 
 .social-links img {
-    height: 15px;
+    height: 20px;
     margin-bottom: 30px;
 }
 
@@ -120,6 +117,19 @@ nav ul li a{
     height: 280px;
 }
 
+.msg-col img {
+    height: 130px;
+    border-radius: 20px;
+    transition: all 0.2s;
+    z-index: 10;
+}
+.msg-col img:hover {
+    height: 150px;
+    z-index: 100;
+}
+
+
+
 .msg-col h1 {
     color: #ffffff;
     font-size: 80px;
@@ -131,17 +141,6 @@ nav ul li a{
     color: #ddd;
     font-size: 15px;
     line-height: 25px;
-}
-
-.msg-col a{
-    display: inline-block;
-    text-decoration: none;
-    color: #555;
-    background: #fff;
-    font-size: 15px;
-    padding: 10px 35px;
-    border-radius: 30px;
-    margin-top: 25px;
 }
 
 .controller {
@@ -171,4 +170,76 @@ nav ul li a{
     top: 0;
     transform: translateX(-50%);
     transition: 0.5s;
+}
+
+.btn, .btn:link, .btn:visited {
+    margin-top: 15px;
+    text-transform: uppercase;
+    margin-left: 30px;
+	 text-decoration: none;
+	 padding: 12px 35px;
+	 display: inline-block;
+	 border-radius: 200px;
+	 transition: all 0.2s;
+	 position: relative;
+	 font-size: 16px;
+	 border: none;
+	 cursor: pointer;
+}
+ .btn:hover {
+	 transform: translateY(-4px);
+	 /* box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.2); */
+}
+ .btn:hover::after {
+	 transform: scaleX(1.4) scaleY(1.6);
+	 opacity: 0;
+}
+ .btn:active, .btn:focus {
+	 transform: translateY(-1px);
+	 box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.2);
+}
+ .btn::after {
+	 content: '';
+	 display: inline-block;
+	 height: 100%;
+	 width: 100%;
+	 border-radius: 10rem;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 z-index: -1;
+	 transition: all 0.4s;
+}
+ .btn--white {
+	 background-color: #fff;
+	 color: #777;
+}
+ .btn--white::after {
+	 background-color: #fff;
+}
+ .btn--green {
+	 background-color: #fff;
+	 color: #777;
+}
+ .btn--green::after {
+	 background-color: #fff;
+}
+.btn--black {
+	 background-color: black;
+	 color: #fff;
+}
+ .btn--black::after {
+	 background-color: black;
+}
+.btn--blue {
+	 background-color: #2E89FF;
+	 color: #fff;
+}
+ .btn--blue::after {
+	 background-color: #2E89FF;
+}
+
+.inline {
+    text-decoration: none;
+    color: #fff;
 }
