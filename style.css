@@ -71,20 +71,22 @@ nav h2 {
 }
 
 .search-icon {
-    width: 20px;
+    width: 40px;
     display: block;
     margin: 120px auto 0;
 }
 
 .social-links {
     width: 30px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     margin: 220px auto 0;
-    text-align: center;
 }
 
 .social-links img {
-    height: 20px;
+    height: 40px;
     margin-bottom: 30px;
 }
 
